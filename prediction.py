@@ -8,7 +8,7 @@ Created on Tue Sep  4 16:44:19 2018
 import os
 import segmentation
 from sklearn.externals import joblib
-
+import machine_train
 # load the model
 current_dir = os.path.dirname(os.path.realpath(__file__))
 model_dir = os.path.join(current_dir, 'models/svc/svc.pkl')

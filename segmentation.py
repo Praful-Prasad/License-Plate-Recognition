@@ -27,7 +27,7 @@ from skimage.io import imread
 
 # The invert was done so as to convert the black pixel to white pixel and vice versa
 
-license_plate = imread("Eroded_inverted_image.jpg", as_grey=True)
+license_plate = imread("Eroded_inverted_image.jpg", as_gray=True)
 
 print("IMSHOW - ")
 imshow(license_plate)
