@@ -77,11 +77,10 @@ image_data, target_data = read_training_data(training_dataset_dir)
 # how sure the model is of it's prediction
 svc_model = SVC(kernel='linear', probability=True)
 
-
-cross_validation(svc_model, 4, image_data, target_data)
-
 # let's train the model with all the input data
 svc_model.fit(image_data, target_data)
+
+cross_validation(svc_model, 4, image_data, target_data)
 
 # we will use the joblib module to persist the model
 # into files. This means that the next time we need to
